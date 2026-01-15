@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Implementação - Performancy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+            color: #1a2332;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-1 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .slide-2 {
+            background: #f8fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 24px;
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: inherit;
+        }
+
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .feature-icon {
+            font-size: 24px;
+            margin-top: 2px;
+        }
+
+        .gantt-chart {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .gantt-row {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .gantt-label {
+            width: 200px;
+            font-weight: 600;
+            color: #1a2332;
+        }
+
+        .gantt-bars {
+            flex: 1;
+            display: flex;
+            height: 40px;
+            background: #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .gantt-bar {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .week-1 { background: #667eea; width: 25%; }
+        .week-2 { background: #764ba2; width: 25%; }
+        .week-3 { background: #9f7aea; width: 25%; }
+        .week-4 { background: #805ad5; width: 25%; }
+
+        .timeline-labels {
+            display: flex;
+            margin-top: 10px;
+            color: #4a5568;
+            font-weight: 500;
+            margin-left: 200px; /* Mesma largura do gantt-label */
+        }
+        
+        .timeline-label {
+            width: 25%;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Detalhamento do Trabalho -->
+    <div class="slide slide-1">
+        <div class="container">
+            <h1>🚀 Plano de Implementação - Hi Platform</h1>
+            <p style="font-size: 20px; margin-bottom: 30px; opacity: 0.9;">Implementação completa em 30 dias com metodologia ágil</p>
+            
+            <div class="highlight-box">
+                <h2>Visão Geral</h2>
+                <p style="font-size: 18px; line-height: 1.7; margin-bottom: 20px;">
+                    Sistema operacional para 20 usuários com integração total aos canais de comunicação (MeeTime, Hi Platform, WhatsApp) e CRM (HubSpot), incluindo playbooks automatizados e agente de preenchimento inteligente.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🔌</div>
+                    <div>
+                        <h3>Integração Completa</h3>
+                        <p>Conexão com MeeTime, Hi Platform, WhatsApp e HubSpot</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🤖</div>
+                    <div>
+                        <h3>Automação Inteligente</h3>
+                        <p>Playbooks automatizados e agente de preenchimento</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <div>
+                        <h3>Time Preparado</h3>
+                        <p>20 usuários treinados e operacionais</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <div>
+                        <h3>Implementação Rápida</h3>
+                        <p>Entregue em apenas 30 dias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Cronograma Gantt -->
+    <div class="slide slide-2">
+        <div class="container">
+            <h1 style="color: #1a2332;">📅 Cronograma de Implementação</h1>
+            <p style="color: #4a5568; font-size: 20px; margin-bottom: 30px;">Linha do tempo detalhada das 4 semanas de projeto</p>
+            
+            <div class="gantt-chart">
+                <div class="gantt-row">
+                    <div class="gantt-label">Semana 1: Configuração Inicial</div>
+                    <div class="gantt-bars">
+                        <div class="gantt-bar week-1">Semana 1</div>
+                    </div>
+                </div>
+                
+                <div class="gantt-row">
+                    <div class="gantt-label">Semana 2: Playbooks</div>
+                    <div class="gantt-bars">
+                        <div class="gantt-bar week-1"></div>
+                        <div class="gantt-bar week-2">Semana 2</div>
+                    </div>
+                </div>
+                
+                <div class="gantt-row">
+                    <div class="gantt-label">Semana 3: Integração CRM + AI</div>
+                    <div class="gantt-bars">
+                        <div class="gantt-bar week-1"></div>
+                        <div class="gantt-bar week-2"></div>
+                        <div class="gantt-bar week-3">Semana 3</div>
+                    </div>
+                </div>
+                
+                <div class="gantt-row">
+                    <div class="gantt-label">Semana 4: Homologação & Go-Live</div>
+                    <div class="gantt-bars">
+                        <div class="gantt-bar week-1"></div>
+                        <div class="gantt-bar week-2"></div>
+                        <div class="gantt-bar week-3"></div>
+                        <div class="gantt-bar week-4">Semana 4</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-labels">
+                    <div class="timeline-label">Dia 1-7</div>
+                    <div class="timeline-label">Dia 8-14</div>
+                    <div class="timeline-label">Dia 15-21</div>
+                    <div class="timeline-label">Dia 22-30</div>
+                </div>
+            </div>
+            
+            <div class="highlight-box" style="background: rgba(102, 126, 234, 0.1); margin-top: 30px; border-left-color: #667eea;">
+                <h3 style="color: #1a2332;">Entregas por Fase</h3>
+                <ul style="margin-top: 15px; columns: 2; list-style-type: none;">
+                    <li>✅ Instalação do sistema</li>
+                    <li>✅ Integração com canais</li>
+                    <li>✅ Criação de playbooks</li>
+                    <li>✅ Treinamento da equipe</li>
+                    <li>✅ Conexão com HubSpot</li>
+                    <li>✅ Agente AI operacional</li>
+                    <li>✅ Testes de carga</li>
+                    <li>✅ Go-live</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

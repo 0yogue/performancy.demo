@@ -1,0 +1,335 @@
+
+Documentação da API - WebService HPro
+1. Objetivo
+Este documento descreve os endpoints disponíveis no WebService da HPro, utilizado para integração do sistema ERP da IS. A
+comunicação é feita via requisições HTTP utilizando o formato JSON.
+2. Formato dos dados
+• Entrada e saída: JSON
+• Codificação: UTF-8
+3. Dados Gerais
+URL BASE: http://hda0897nxnd.sn.mynetname.net:9080
+Usuário: IAAGENDA
+Senha: 1AG3NDA
+4. Token
+Todas as requisições exigem o envio de um Token válido no corpo da requisição.
+Exemplo de chamada: http://localhost:82/api-auth-signin?Username=XXXX&Password=XXXX
+Método HTTP: GET
+Parâmetros:
+• Username (texto, obrigatório)
+• Password (texto, obrigatório)
+Retorno (JSON):
+{
+"Token":"123456"
+}
+5. Endpoints disponíveis
+◼ Cadastro de células
+Descrição: Retorna os dados das células cadastradas.
+Exemplo de chamada: http://localhost:82/api-services-cadastrocelulas?Token=123456&Situacao=Ativo
+Método HTTP: GET
+Parâmetros:
+• Token (texto, obrigatório) 
+• Situacao (texto, opcional, [Ativo / Inativo])
+Retorno (JSON):
+[{
+"Codigo": inteiro,
+"RazaoSocial": texto,
+"NomeFantasia": texto,
+"Endereco": texto,
+"Numero": texto,
+"Cidade": texto,
+"Bairro": texto,
+"Estado": texto,
+"Cep": texto,
+"Cnpj": texto,
+"InscricaoEstadual": texto,
+"Telefone": texto,
+"Fax": texto,
+"Email": texto,
+"HomePage": texto,
+"CaixaPostal": texto,
+"Contato": texto,
+"Mascara": texto,
+"CodigoPais": inteiro,
+"NomePais": texto,
+"PercentualDescontoPagtoAVista": decimal,
+"FaturamentoMinimoFob": decimal,
+"FaturamentoMinimoCif": decimal,
+"PrecoIndustriaSp": decimal,
+"PrecoIndustriaForaSp": decimal,
+"PrecoConsumidorFinal": decimal,
+"PrecoECommerce": decimal,
+"PercentualComissaoRevenda": decimal,
+"PercentualIndenizacaoRevenda": decimal,
+"PercentualComissaoIndustria": decimal,
+"PercentualIndenizacaoIndustria": decimal,
+"PercentualComissaoECommerce": decimal,
+"PercentualIndenizacaoECommerce": decimal,
+"LogotipoCelula": texto,
+"Situacao": texto,
+"UrlApi": texto,
+"Centralizadora": inteiro,
+"CodigoVendedorBloqueio": inteiro,
+"VendedorBloqueio": texto,
+"CnpjRaiz": texto
+}]
+◼ Contatos dos clientes
+Descrição: Retorna os contatos dos clientes.
+Exemplo de chamada: http://localhost:82/api-services-contatosclientes?Token=123456&Cliente=12
+Método HTTP: GET
+Parâmetros:
+• Token (texto, obrigatório)
+• Cliente (inteiro, opcional)
+Retorno (JSON):
+[{
+"CodigoCliente": inteiro,
+"Sequencia": inteiro,
+"Nome": texto,
+"Departamento": texto,
+"Telefone": texto,
+"Email": texto,
+"Fax": texto,
+"RamalTelefone": inteiro,
+"RamalFax": inteiro,
+"Celular": texto,
+"Observacoes": texto,
+"Cargo": texto,
+"EmailPessoal": texto,
+"DataNascimento": texto,
+"Skype": texto,
+"NomeEsposa": texto,
+"AniversarioCasamento": texto,
+"Linkedin": texto,
+"Participacao": texto,
+"ReceberNewsLetter": texto,
+"Time1": inteiro,
+"Time2": inteiro,
+"Time3": inteiro,
+"Time4": inteiro
+}]
+◼ Cadastro de vendedores
+Descrição: Retorna os dados dos vendedores.
+Exemplo de chamada: http://localhost:82/api-services-cadastrovendedores?Token=123456&Celula=33&Cargo=XXXXX
+Método HTTP: GET
+Parâmetros:
+• Token (texto, obrigatório)
+• Celula (inteiro, opcional)
+• Cargo (texto, opcional)
+• Situacao (texto, opcional, [Ativo / Inativo])
+Retorno (JSON):
+[{
+"Codigo": inteiro,
+"Nome": texto,
+"Endereco": texto,
+"Bairro": texto,
+"Cidade": texto,
+"Estado": texto,
+"Cep": texto,
+"Cnpj": texto,
+"InscricaoEstadual": texto,
+"Cpf": texto,
+"Rg": texto,
+"Tipo": texto,
+"Telefone": texto,
+"Celular": texto,
+"Fax": texto,
+"Email": texto,
+"ComissaoVendasGeral": decimal,
+"Observacao": texto,
+"Classificacao": texto,
+"Situacao": texto,
+"RazaoSocial": texto,
+"Skype": texto,
+"DiaPlanejamentoAtividade": texto,
+"CodigoCelula": inteiro,
+"RazaoSocialCelula": texto
+}]
+◼ Atividades
+Descrição: Retorna as atividades.
+Exemplo de chamada: http://localhost:82/api-services-atividades?Token=123456&Empresa=1&DataInicial=2025-08-01
+Método HTTP: GET
+Parâmetros:
+• Token (texto, obrigatório)
+• Empresa (texto, obrigatório)
+• DataInicial (texto, aaaa-mm-dd, obrigatório)
+• DataFinal(texto, aaaa-mm-dd, obrigatório)
+• Celula (inteiro, opcional)
+• Cliente (inteiro, opcional)
+• Vendedor (inteiro, opcional)
+• Situacao (texto, opcional, [Pendente / Realizado / Não realizado])
+Retorno (JSON):
+[{
+"ChavePrimaria": texto,
+"CodigoCliente": inteiro,
+"RazaoSocialCliente": texto,
+"Sequencia": inteiro,
+"CodigoCelula": inteiro,
+"RazaoSocialCelula": texto,
+"Data": texto,
+"CodigoVendedor": inteiro,
+"NomeVendedor": texto,
+"Observacoes": texto,
+"NomeContatoCliente": texto,
+"CodigoContatoCliente": inteiro,
+"Tipo": texto,
+"Horario": texto,
+"Situacao": texto,
+"KeyVisitaRealizada": texto,
+"MotivoVisitaRealizada": texto,
+"Duracao": texto,
+"Acompanhante1": inteiro,
+"NomeAcompanhante1": texto,
+"Acompanhante2": inteiro,
+"NomeAcompanhante2": texto,
+"Acompanhante3": inteiro,
+"NomeAcompanhante3": texto,
+"Orcamento": texto,
+"CodigoTipoAtividade": inteiro,
+"DescricaoTipoAtividade": texto,
+"Email": texto,
+"RegistroEnvioEmail": texto,
+"SequneciaUltimaAcao": inteiro,
+"StatusCliente": texto
+}]
+◼ Cadastro de clientes
+Descrição: Retorna dados completos dos clientes, incluindo grupos, planos de contas, produtos e modelos de negócio.
+Exemplo de chamada: http://localhost:82/api-services-cadastroclientes?Token=123456&Situacao=Ativo
+Método HTTP: GET
+Parâmetros:
+• Token (texto, obrigatório)
+• Situacao (texto, opcional, [Ativo / Inativo])
+Retorno (JSON):
+ [
+ {
+ "Codigo": "inteiro",
+ "RazaoSocial": "texto",
+ "Cnpj": "texto",
+ "Telefone": "texto",
+ "Email": "texto",
+ "Endereco": "texto",
+ "Cidade": "texto",
+ "Estado": "texto",
+ "DataCadastro": "texto (YYYY-MM-DD)",
+ "LimiteCredito": "decimal",
+ "TabelaPrecos": "inteiro",
+ "GrupoCliente": "inteiro",
+ "StatusProspect": "booleano",
+ "GRUPOCLIENTES": [
+ {
+ "CodigoCliente": "inteiro",
+ "Grupo": "texto",
+ "DescricaoGrupo": "texto"
+ }
+ ],
+ "PLANOCONTAS": [
+ {
+ "CodigoCliente": "inteiro",
+ "CodigoCelula": "inteiro",
+ "PlanoCompra": "texto",
+ "PotencialCompras": "decimal"
+ }
+ ],
+ "PRODUTOSCLIENTE": [
+ {
+ "Representada": "inteiro",
+ "RazaoSocialRepresentada": "texto",
+ "Produto": "texto",
+ "Referencia": "texto",
+ "CodigoCliente": "inteiro",
+ "QuantidadeMensal": "inteiro"
+ }
+ ],
+ "MODELOSNEGOCIO": [
+ {
+ "QuantidadeUnidades": "inteiro",
+ "Compras": "texto",
+ "Atendimento": "texto",
+ "Perfil": "texto",
+ "VariedadeProdutos": "inteiro",
+ "PublicoAlvo": "texto",
+ "ClasseA": "texto",
+ "ClasseB": "texto",
+ "ClasseC": "texto",
+ "ClasseD": "texto",
+ "ClasseE": "texto",
+ "LojaMetroQuadrado": "inteiro",
+ "ECommerce": "texto",
+ "Televendas": "texto",
+ "Vendedores": "inteiro",
+ "LicitacaoPercentual": "inteiro",
+ "BalcaoPercentual": "inteiro",
+ "IndustriaPercentual": "inteiro",
+ "ClassificacaoTipo": "texto",
+ "PrincipaisGruposProdutos": "texto"
+ }
+ ]
+ }
+ ]
+◼ Vínculos entre clientes/vendedores/células
+Descrição: Retorna vínculos entre clientes, vendedores e células.
+Exemplo de chamada: http://localhost:82/api-services-vinculosclientesvendedorescelulas?Token=123456&Celula=12
+Método HTTP: GET
+Parâmetros:
+• Token (texto, obrigatório)
+• Celula (inteiro, opcional)
+• Cliente (inteiro, opcional)
+Retorno (JSON):
+[{
+"CodigoCliente": inteiro,
+"RazaoSocialCliente": texto,
+"CodigoCelula": inteiro,
+"RazaoSocialCelula": texto,
+"CodigoVendedor": inteiro,
+"NomeVendedor": texto
+}]
+◼ Cadastro de atividades
+Descrição: Retorna o cadastro de atividades.
+Exemplo de chamada: http://localhost:82/api-services-cadastroatividades?Token=123456&Situacao=Inativa
+Método HTTP: GET
+Parâmetros:
+• Token (texto, obrigatório)
+• Situacao (texto, opcional, [Ativa / Inativa])
+• Celula (inteiro, opcional)
+Retorno (JSON):
+[{
+"Codigo": inteiro,
+"Descricao": texto,
+"NotificaCliente": texto,
+"Assunto": texto,
+"Situacao": texto
+}]
+◼ Inclusão/alteração de atividades (AGENDA)
+Descrição: Insere ou atualiza atividades.
+Exemplo de chamada: http://localhost:82/api-services-atividadesajustes?Token=123456&Empresa=2&ChavePrimaria=5;17
+Método HTTP: POST
+Parâmetros obrigatórios:
+• Token (texto, obrigatório)
+• Empresa (inteiro, obrigatório)
+• Celula (inteiro, obrigatório)
+• Cliente (inteiro, obrigatório)
+• Vendedor (inteiro, obrigatório)
+• ChavePrimaria (texto, opcional, 999999;99999)
+Envio (JSON):
+[{
+"Data": texto, aaaa-mm-dd, opcional,
+"Hora": texto, hhmm, opcional,
+"DataProximaAcao": texto, aaaa-mm-dd, opcional,
+"HoraProximaAcao": texto, hhmm, opcional,
+"HistoricoAtivadade": texto, opcional,
+"TipoAtividade": inteiro, opcional,
+"PlanoAcao": texto, opcional,
+}]
+Retorno:
+Atividade/agenda inclusa/alterada com sucesso!
+6. Erros de validações
+Possíveis erros nas chamadas.
+• "Token inválido!"
+• "O parâmetro "xxxxx" é obrigatório!"
+• Atividade não encontrada!
+• Operação inválida para a realização da atividade! A atividade não está "Pendente"!
+• Operação inválida para a realização da atividade! Não é possível baixar a atividade com data futura!
+• Operação inválida para a realização da atividade! Não é permitido incluir visitas aos Sábados e Domingos!
+• Operação inválida para a realização da atividade! Horário inválido! Horário permitido para visitas das 08:00h às 18:00h
+• Operação inválida para a realização da atividade! Não existe vínculo entre vendedor, cliente e célula!
+PRO
+Soluções de TI para
+Gestão Corporativa

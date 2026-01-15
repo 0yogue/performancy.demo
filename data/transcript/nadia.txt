@@ -1,0 +1,213 @@
+Bate Papo | Nádia e Fabio - October 29
+VIEW RECORDING - 26 mins (No highlights): 
+
+---
+
+0:00 - Fabio El Beck (fabioelbeck@gmail.com)
+  Como que tá esse? Sim, tô à procura de uma oportunidade aí. Ah, tá, procura, legal. Mas algo aparecendo no radar ou ainda?  Até que sim, mas ainda não foi exatamente o que eu quero, sabe? Tá, tá, tá, tá. Exatamente o que a gente quer realmente, né?  É igual eu tô com uma amiga aí do Rio de Janeiro, ela é de marketing também, e ela tá lá assim, ah, tô com a minha família, foram, sei lá, 13 propostas de São Paulo, não quero mudar a família inteira pra São Paulo agora, meu marido tem coisa aqui, filho na escola, e eu tô, não, não, não, é o que aparece no Rio, é três vezes menor o salário, muito menos estratégico, e ela tá nesse dilema, acho que faz uns, sei lá, uns seis meses, assim.  É, putz, aí o Tassi, pelo amor de Deus, aceita, não sei, faz alguma coisa, não, tá tudo bem, eu tenho as reservas, tá indo tudo bem, tá, então tá bom.  Mas realmente é um hiperdesafio. Mas vamos lá. Nádia, é o seguinte, como você e o Zenei, você vai me corrigir, que eu sou o vendedor, eu sou o Zenei, então eu acho que é por aí.  Você ter essa tarefa de ajudar o líder de venda com dados, com performance de time, treinamentos e coisas nesse sentido.  Analisando principalmente dados de CRM, conversas e coisas assim. É isso, né? Também. Também.
+
+1:38 - Nádia Motta
+  Boa.
+
+1:39 - Fabio El Beck (fabioelbeck@gmail.com)
+  E o que mais, assim? O mais seriam os desafios de vocês?
+
+1:43 - Nádia Motta
+  O Sales Enablement, ele realmente é focado mais aí nisso que você falou. O meu papel como gestão comercial, ele envolve isso.  Isso aí seria uma das pernas, né? Da gestão ali comercial. Mas envolve toda a parte estratégica. estratégica, igual você falou, de números, e também a parte prática também.  Executar, entender qual o melhor ICP, entender qual o melhor caminho, se a cadência está legal. Então, acho que toda a parte ali de hands-on e prática também faz sentido.  Perfeito. Perfeito.
+
+2:19 - Fabio El Beck (fabioelbeck@gmail.com)
+  Aí, entendendo isso e vivenciando isso por alguns anos, eu cheguei num denominador comum que é onde está a inteligência de vendas?  Não é no CRM. Que todo mundo fala, não, está no CRM, cadastra. Não, não é no CRM. Porque, assim, o usuário, né, o vendedor pode cadastrar o que ele quiser, ele pode pegar a tarefa e jogar lá pra frente, falar que fez, ou que está tudo bem, ele faz o que ele quiser, né?  E não está ali. E aí, assim, onde está essa inteligência de vendas? Onde você acha que está? Onde você falaria que é o lugar, assim?
+
+2:59 - Nádia Motta
+  Eu, pelo menos, sei. sempre uso banco de dados, né? Banco de dados. E o resultado disso, sim.
+
+3:05 - Fabio El Beck (fabioelbeck@gmail.com)
+  Ah, e o banco de dados, eles vêm da onde, esses números?
+
+3:09 - Nádia Motta
+  Ah, vêm direto dos códigos, né?
+
+3:12 - Fabio El Beck (fabioelbeck@gmail.com)
+  Certo. Então, e aí, o meu ponto é, estou pensando agora, construindo algo em cima, que é, esse banco de dados, os dados e tudo mais, a gente pega desse monte de ferramenta que a gente coloca, desde CRM, até de ligação, de tudo mais, enfim.  Não.
+
+3:33 - Nádia Motta
+  Não, de onde você pega?
+
+3:35 - Fabio El Beck (fabioelbeck@gmail.com)
+  É do código mesmo.
+
+3:37 - Nádia Motta
+  Existem ferramentas que fazem isso como Metabase, Tablo, pegam o código, o dado da fonte mesmo. Tá, que fonte?
+
+3:49 - Fabio El Beck (fabioelbeck@gmail.com)
+  Quais fontes?
+
+3:51 - Nádia Motta
+  Do código, da raiz de onde aconteceu tudo. Então, a gente tem uma plataforma ali acontecendo. Se alguém clica ali, isso está no banco de dados do nosso código da tecnologia, e aí existem ferramentas para basicamente organizar melhor todo esse algoritmo, tudo isso, que é Metabase, Tablo.
+
+4:19 - Fabio El Beck (fabioelbeck@gmail.com)
+  Tá, mas isso você está falando de acesso a site, por exemplo, não é a rotina de vendas, você disse?
+
+4:26 - Nádia Motta
+  Não, não é a rotina de vendas, não, eu estou com todo o funil, por exemplo, visitou o site, fez uma compra, às vezes ele respondeu algum formulário ali, então dá para a gente fazer todo um filtro.  Tá, isso, mas olhando para o marketing. Ah, QLTB, não, vendas também, dá para ver, churn, porque esse cara, né, dá para ver todos esses números, aí depende depois de você usar um IA para organizar.
+
+5:00 - Fabio El Beck (fabioelbeck@gmail.com)
+  A gente está falando de interações, aspas, passivas da marca, ou seja, eu tenho meu site, quem acessou, que ele clicou no banner, que ele fez não sei o que ele quer fazer compras, se ele fez um-bound.
+
+5:15 - Nádia Motta
+  estou entendendo muito bem, hoje você quer chegar, que tipo de dados?
+
+5:18 - Fabio El Beck (fabioelbeck@gmail.com)
+  Não, dados de venda, venda, assim, comercial. Quais dados? O dia a dia do comercial, do cara que vende.
+
+5:26 - Nádia Motta
+  Quais dados?
+
+5:28 - Fabio El Beck (fabioelbeck@gmail.com)
+  Então, sei lá, tudo que está no CRM, se está no funil na parte certa, qual foi a interação, se falou com todo mundo que precisava falar, se ele fez a sequência de perguntas corretas dentro da reunião, se ele qualificou direito, se passou para o vendedor bem, se está fechando mesmo o contrato, se está no valor certo, coisas desse tipo mais táticas de vendas.  Você acredita que valor E não muito na interação. o real com o cliente.
+
+6:03 - Nádia Motta
+  Tá, mas a interação real precisa ir para algum lugar, né? Se você tem lá 20 vendedores, como é que você vai saber se ele colocou a interação real?  Isso, é isso.
+
+6:12 - Fabio El Beck (fabioelbeck@gmail.com)
+  Esse é o ponto. E aí, para mim, é assim, que às vezes, sei lá, eu chego com um cara de vendas e falo, ah, e aí, como que está esse deal aqui?  Aí o cara fala, tá bom.
+
+6:23 - Nádia Motta
+  É, hoje existe ferramentas, né, que transcreve automático para o CRM, ligações, vídeos, calls.
+
+6:31 - Fabio El Beck (fabioelbeck@gmail.com)
+  Isso, exatamente isso, exatamente isso. E aí, isso começou a ficar na minha cabeça de, pô, o cara preenche o que ele quiser, ele faz o que ele quiser, mas se tiver uma transcrição do que ele realmente falou, é melhor.  Aí, não sei, pra mim, assim, normalmente acontece assim, ah, você falou com o cara? Falei, falei, falei. Falei ontem, falei ontem, ele tá pra me responder.  O cara abriu aqui o WhatsApp e começou a mandar agora. Aí eu fico, tá bom, então, abre aí de novo.  Eu vejo o aconteceu, não, não, depois eu falo, porque é uma... E, na verdade, ele não fez, né? Então, falar ou colocar no CRM é muito fácil.  E aí eu falo, bom, as interações com o cliente, que eu acho que são... Que aí o negócio que você falou até do tablo, do churn, do expansão, upsell ou não, o que está sendo negociado e tal, é muito na interação com o cliente, comigo, assim.  Então, o eu estou falando? E é qualquer canal, né? Normalmente o CRM pega muito e-mail e, sei lá, às vezes transcrição de coisas e tal, mas, às vezes, um WhatsApp, um Slack, um e-mail, qualquer outra coisa, não, sei lá, não fica muito ali.  E aí, pensando nisso, eu falei, tá, legal, a gente consegue fazer alguma coisa interessante com essas interações com o cliente.  E aí é... Playbook, né? Todo mundo meio que precisa saber o que falar. Então, quando tem uma empresa dando churn, ou indo embora, ou acontecendo alguma coisa, normalmente Normalmente isso é...  Normalmente é... Vai lá fazer um diagnóstico, vai ver o NPS, vai entender o que está acontecendo, por que ele está indo embora e tal, e não no último dia, né?  Aquela coisa, ah, Nádia, então, lembra que estava mal, a gente vai precisar desligar mesmo. Não, calma aí! E o cara tinha falado para o gestor ontem que estava tudo bem com a conta.  Aquelas coisas meio surpreendentes. Falou, perdemos o cliente. Então, é muito nessas interações e aí é muito resultado de um playbook ou de uma conversa bem estruturada, bem feita e assim por diante.  E aí a gente pensou aqui, está fazendo uma coisa de pegar todas as fontes de conversa com o cliente e transformar isso num playbook da empresa, não aquele que o gestor criou, não o que o outro falou que era melhor fazer e tal, o que realmente deu certo.
+
+8:50 - Nádia Motta
+  Pegar as conversas que deram certo, que converteram, encontrar um padrão ali e criar, legal. Exatamente.
+
+8:57 - Fabio El Beck (fabioelbeck@gmail.com)
+  E aí não é aquela coisa do, ah, o que o C... E aí a gente faz um pouco dessa aspas mágica de cara, isso aqui é o seu playbook, todas as suas interações.  Uma coisa dessa para atividades você tinha ou para as interações e tudo mais, é algo que você já viu?  É algo que faz sentido, integra com alguma coisa?
+
+9:30 - Nádia Motta
+  Não, eu nunca vi, pelo menos nunca vi, não de forma completa e tão mágica como vocês dizem, mas seria interessante sim, porque hoje acho que a dor que você pode pegar é que o playbook acaba sendo um negócio, você põe dentro da gaveta ali e ninguém usa, né?  Eu tenho uma caixinha cheia deles. Na verdade, o playbook deveria ser um ponto de treinamento, de onboarding. A pessoa lê o playbook e já sabe o que fazer no próximo dia, né, uma coisa mais interativa, então quando você fala de pegar situações reais e até talvez no playbook mesmo colocar o link ali da conversa, colocar o link da gravação da call pra pessoa que entrou ver aquilo e saber como se direcionar, inclusive explicando o porquê que cada coisa deu certo, né, eu acho que a inteligência artificial hoje, consegue entender isso, se o tom da voz foi positivo, então dar essas dicas dentro do playbook, olha, um tom amigável, uma voz média, né, esse perfil, o cliente falou isso, então já deu pra identificar que é um perfil direto, então não enrole, tipo, então acho que esses detalhes seriam muito interessantes colocar.
+
+10:53 - Fabio El Beck (fabioelbeck@gmail.com)
+  Isso é bem legal, porque o que você falou de treinamento e de guia, né, quase uma... So we were just about the playbook, how do you compare it to playbook, and how to playbook, people talk about real time, so we're all live, for example, we're talking about a pop-up or something, and we're talking about a question, and we're about we're talking about the question, to really help, to not say that, I'm not not not not it's a good thing, now what do do with this?  So, things are so, and then...
+
+11:43 - Nádia Motta
+  I think that there's a tool that I know, I don't know if you know, it's called Crystal, it's not in Portuguese, I think it's in it's about to read the person's on the LinkedIn, for more a bonus.
+
+11:56 - Fabio El Beck (fabioelbeck@gmail.com)
+  It's their name in a double, it's like the One Crystal, it's
+
+12:00 - Nádia Motta
+  Não sei, não lembro. Mas, por exemplo, seria interessante também, antes da reunião, a pessoa já ter um resumão ali de como é o perfil emocional daquela pessoa, né, através do LinkedIn e das postagens, né, eu acho, do LinkedIn, a inteligência vai e fala, olha, é um perfil mais de dados, então fale de dados, né, para a pessoa se preparar ali antes, seria legal também.
+
+12:23 - Fabio El Beck (fabioelbeck@gmail.com)
+  É, até para fazer um rapor, né, bem feito, assim, uma coisa mais, assim, não cair de paraquedas. Teve um líder de venda, eu acho que era da TOTS, se não me engano, que ele falou assim, pô, às vezes eu estou aqui, e aí o cara fala, Fabio, 11h30 tem uma reunião, entra lá comigo.  O fala, quem é? Ah, não sei, tá lá no CRM. Ele não faz ideia de quem vai entrar, onde tá, não recebeu o link da reunião, ele tá totalmente perdido, e aí ele é o líder, ele tem que entrar, falar, fazer, e ele não faz ideia do outro lado, né, então ele falou, cara, se você tivesse um resumo, que eu acho que é...  Você colocou muito mais do que ele só falou, se tivesse um resumo da pessoa, quem que é o cargo da pessoa e a empresa, você acrescentou coisas bem legais, essas coisas eu acho que aí muda o jogo, falar assim, é a Nádia, tal empresa, tá aí, mas eu acho que essa contribuição sua foi boa, de trazer esse sentimento, quem que é o cargo, como faz, fala, isso é...  E a sua ideia está sendo desenvolver esse tipo de produto, vocês já estão no caminho aí?
+
+13:33 - Nádia Motta
+  Isso.
+
+13:34 - Fabio El Beck (fabioelbeck@gmail.com)
+  Estamos com, digamos, MVP, um produto que para no ar, bem assim, que faz o playbook, então eu pego todas as interações com o cliente de qualquer N plataformas, coloco dentro aqui do nosso sistema e ele te entrega em, sei lá, dois Você dá algum cliente para fazer esse MVP aí?  Já temos um cliente rodando e outros dois para fechar essa semana.
+
+13:58 - Nádia Motta
+  Ah, legal.
+
+14:00 - Fabio El Beck (fabioelbeck@gmail.com)
+  No silêncio, para a gente começar a construir e fazer...
+
+14:04 - Nádia Motta
+  Eu acho que é assim que você vai ter certeza das necessidades e até conversar com os próprios vendedores. Ah, e esse retorno que eu dei, fez sentido?  Não fez? Exato. E, inclusive, depois que tiver o playbook funcionando, vocês fazerem a análise de quem usou o playbook.  Porque não necessariamente a pessoa vai usar perfeito também, né? Sim. Mostrar, olha, ela não usou... E aí você vai conseguir até ter uma previsibilidade de fechamento.  Por quê? Ó, analisando essa call aqui, você errou aqui, aqui e aqui. E pelo tom que o cara falou, provavelmente você não vai conseguir fechar.  Sugiro que você tente marcar uma outra para poder reverter isso. Então, já dando sugestão para conseguir reverter. Ou até dizendo, ó, sua call foi perfeita, agora mande esse e-mail aqui, resumindo isso, para conectar bastante e fechar.  sei lá. Sim, sim, sim.
+
+14:56 - Fabio El Beck (fabioelbeck@gmail.com)
+  É, para girar, sim, girar mais previsibilidade. previsibilidade. previsibilidade. previsibilidade. Obrigado. O forecast fica mais apurado ali, né? Isso também eu acho que é um...  Nesses big data total aí, se você põe ali pra frente e fala, ah, tô negociando, 10 mil. Aparece o forecast e é 10 mil.  E aí vai ter que sentir lá no tete-a-tete com o vendedor, e aí, vai fechar ou não? Cadê? Estamos no dia 29, tem mais dois dias, o cara vai te mandar ou não, né?  E aí fica nessa briga. Mas é uma boa. Porque aí se tem esses red flags assim, você fala, isso aqui não vai fechar.  Olha o tom do cara, o cara falou nada a ver.
+
+15:30 - Nádia Motta
+  O gestor mesmo, ó, o seu vendedor tal tá sempre errando nisso, deu um treinamento de tal coisa. Sim, sim.
+
+15:38 - Fabio El Beck (fabioelbeck@gmail.com)
+  E aí, isso muito de treinamento e tudo mais. E tem aquela coisa do... Você até mencionou do ICP, né?  Ah, fala do ICP e como faz e tal. Se eu pego... Porque aí eu tô entrando em todas as calls, eu sei quem é a pessoa do outro lado e a empresa.  Tá Dá pra morrer.
+
+16:00 - Nádia Motta
+  Boa, fechou. E ver quem está fechando mais, né?
+
+16:04 - Fabio El Beck (fabioelbeck@gmail.com)
+  Isso, aí está fechando mais com esse, mais com aquele, ou essa empresa tal. Tem até uma persona de forma automática.
+
+16:09 - Nádia Motta
+  Isso, e eu consigo fazer o CP também.
+
+16:11 - Fabio El Beck (fabioelbeck@gmail.com)
+  Falar, olha, essa empresa, esse setor, cara, está convertendo muito, sei lá, esse mês. É, pode ter produto end-to-end, né?
+
+16:19 - Nádia Motta
+  Eu acho que isso vai demorar uns anos, mas... Corre aí, programador. Você está começando aí pelo playbook, aí você pode ir aumentando isso e montar um end-to-end, né?  Onde já dá tudo ali meio que mastigado, só para a pessoa executar.
+
+16:36 - Fabio El Beck (fabioelbeck@gmail.com)
+  É, o meu sonho, né? Que ontem eu fui falar com, presencial com o desenvolvedor. Desenvolvedor, né? Bicho do mar gosta de ficar na toca, eu consegui tirar ele da toca, e aí a gente conversou.  Que era muito essa, que aí você falou end-to-end, me lembrou desse, cara, tudo meio que automatizado. O que eu, Fábio, como pessoa de vendas do time, preciso fazer?  Reunião. O SDR é AI, o ICP e a persona vai sendo tudo feito, então a gente chegou nesse, será que isso é possível?  Aí eu fiz a pergunta para você do ICP, você, pô, isso aí a gente vai fazer muito bom. Então não é só na minha cabeça que existe isso, legal, gostei, gostei de ouvir, Nádia, adorei.  Mas, mas é isso, então era assim, era mais para muito entender esse, se faz, se para de pé, sabe?  Porque não faz muito sentido.
+
+17:31 - Nádia Motta
+  Agora eu acho que é muito mais na prática ver a cidade desses dados e se realmente esses dados que vocês estão gerando está trazendo resultado, né?
+  ACTION ITEM: Email Fabio intro to tool-enthusiast contact - WATCH: https://fathom.video/calls/456096683?timestamp=1053.9999  Para trazer essa confiança. Fábio, se você quiser, eu vou ver se eu tenho alguém aqui que possa se interessar em conversar com você também, trazer mais alguns insights, eu te falo qualquer coisa.
+
+17:53 - Fabio El Beck (fabioelbeck@gmail.com)
+  Claro, claro, por favor, deixa até, se você puder, te mostro em cinco minutinhos o que a gente tem aqui no ar.  Sim. So for you to and say, ah, it exists even, it's a dream, but then what we're going do here for this first client that I said that we closed, and then, obviously, we're starting to get the data and we're starting to try the data to appear here, so total of vendas, converses, conversations, focus, focus here is the client, he wanted to know in how long after the lead entered, the inbound, the person said, with the person.  So, you that's that came inbound, nobody said, the guy was there three days, so we created this for him, and then, the script, the quality, the funil, so there are some things here, but here I think it's what I've been saying, so, with all the interactions with the client, we brought this to him, so, these questions, these facts, he can, for example, that he said, I can put this here on a site, for people to look at already, and then, before they  Pode colocar na AI dele de conversação, pode, pode, pode, pode, pode, pode, pode.
+
+19:07 - Nádia Motta
+  Já consegue ver todas as objeções que estão trazendo. Isso, aí aqui, objeções e os contornos.
+
+19:13 - Fabio El Beck (fabioelbeck@gmail.com)
+  Então, que ele falou aqui? Ah, não quero, sei lá, medo de comprar online. Ah, não vou passar, porque vai clonar meu cartão, tem um monte de coisa.  Aí você fala, entendo perfeitamente, eu sei não sei o reforça a garantia, então, alto preço, então, já traz um monte de coisa, e aí, biblioteca de táticas, por exemplo.  Então, faz uma boa vinda, fala, né, reforça o uso ali de visual, faz não sei o que, uma técnica do negócio, você está vendendo, isso aqui é óculos, né?  Então, como você vai vender uma armação, tem que ser mais técnico, e ajusta ou não no rosto.
+
+19:46 - Nádia Motta
+  Eu acho que vai ser interessante também você escolher um nicho e focar, porque cada nicho vai ter, tipo, diferente abordagem ali, né?
+
+19:55 - Fabio El Beck (fabioelbeck@gmail.com)
+  Márcia, esse eu acho que é o meu segundo pesadelo. O primeiro é fechar cliente para ter... E o segundo é, não quero fechar tão cliente de tudo quanto é lugar, senão eu Eu acho que como você já fechou, sei lá, um, pega o nicho desse cara, está dando certo, vai no nicho desse cara, ou nesses dois que você vai fechar aí.
+
+20:14 - Nádia Motta
+  É isso, é isso. Não sei se você já tem um MVP e vai seguindo nele.
+
+20:19 - Fabio El Beck (fabioelbeck@gmail.com)
+  Eu vou te falar que um é ótica e os outros, agora eu venho focando em tecnologia, porque aí é meu mundo, é onde eu...
+
+20:25 - Nádia Motta
+  Aí é mais legal, startup, pegar uma fintech, ainda...
+
+20:29 - Fabio El Beck (fabioelbeck@gmail.com)
+  É, então a gente está pegando empresas de, sei lá, 200 a 500 pessoas, com um time mais de venda, B2B e tal.  Esse aqui é um pouco diferente, assim, é o que... Pô, era um amigo, ele queria, falou, cara, deixa eu fazer aqui.  Aí ele já botei o negócio no ar, cobra menos, testa, sabe, essas coisas. Mas, enfim... E aí eu também dou a persona, querendo ou não, porque eu já sei um pouco do comportamento daquela persona.  Lógico, esse aqui é o cara que cobra óculos, você usa óculos, você já é persona. Então, você... É um clínico...  Então, por exemplo, ele tem aqui um cliente fora de São Paulo, que ele falou, ah, tá bom, é o cara fora de São Paulo, que eu preciso enviar, custa, não sei o quê.  Então é isso, tudo isso aqui já dá para entender, que aí eu acho que volta no ICP, persona e tudo mais.  E a jornada do cliente, o que ele faz, como ele faz, o pagamento, fechamento, essa é a jornada que a maioria, né, que sempre que fecha tal, passa.  Então é isso, é muito a análise de cada vendedor, né, para você ver quanto tempo ele ligou, o que ele fez, o resumo dos atendimentos, a nota final dele, que aí eu vou conseguir dessa daqui, extrapolar para uma visão mais geral de, olha, ninguém no passo da jornada de compra, no passo 4, 80% deles estão errando, treinamento nisso.  E aí, esse é do individual, e aí depois você vai para o macro ali. Mas é isso, essa é a carinha que está tomando, de acordo com o que a gente vai, vai sentindo ali do cliente, mas hoje...  E é, tá bem legal, e o cliente vai pedindo e vocês... Então, o que a gente falou, vamos tentar fechar 10 clientes e parar.  E aí tem o dinheiro, começa a entrar e faz um pouco dali, pouco daqui, porque senão vai entrando um monte de gente, todo mundo pedindo tudo, um monte de coisa quebrando, mas acabou amanhã, né?  A ideia acaba amanhã. Então, a gente tá nessa de, tá bom, vamos com calma, vamos construindo, entendendo o feedback.
+
+22:25 - Nádia Motta
+  E quanto tempo vocês estão construindo?
+
+22:28 - Fabio El Beck (fabioelbeck@gmail.com)
+  Longos um mês. Sério?
+
+22:31 - Nádia Motta
+  Sério. Nossa, então, realmente.
+
+22:34 - Fabio El Beck (fabioelbeck@gmail.com)
+  Eu acabei de sair das consultorias, falei com o meu amigo, que agora é meu sócio, falei, cara, vamos. Ele falou, vamos.  E aí começou a desenvolver, falei com conhecidos, esse da ótica falou, vamos embora, e aí estamos nessa.
+
+22:50 - Nádia Motta
+  Tá legal, nossa, tá super rápido, porque geralmente essa parte demora, né? Vocês já estão com algo aí bem construído, assim, pra esse início.
+
+22:58 - Fabio El Beck (fabioelbeck@gmail.com)
+  É, sim, o início tá bom, tanto que a gente tá... So we were talking about this, and saying, this is what we have, this is what what we have, have, this but I think that the value of the playbook, the value of this, you go from persona to team, it's very core of the thing, I think we got the essence of the vending, that is here the core, it's a person, the platform, process, it's the playbook, here you take everything else, so I think this is it was a gain interesting, you know, because I talk to people and they say, ah, interesting what you are doing.
+
+23:37 - Nádia Motta
+  It's success for you, it's going to be Ah, yes, I hope, I hope that you... If you say, you tell the success.
+
+23:44 - Fabio El Beck (fabioelbeck@gmail.com)
+  Yes, I hope that you enter in a company that says, Fabio, come here, let's talk. Exactly. And if you have people interested in talking, interested in this, Yes, yes, and you, a mostrar, Hall, by here.  Fiquei... Ficarei muito feliz e aí na próxima empresa, se alguém indicar, se você indicar e alguém fechar alguma coisa acontecer, aí é vendedor, né?  Eu faço o que for, sabe? Aí você fala, Fábio, traz isso aí, me dá uns meses grátis, toma, toma.  Obrigado, você me botou cliente para dentro, toma, leva, sabe? Então, a gente vai se ajudando, porque eu acho que hoje o que eu mais preciso, óbvio, é o segundo ponto, né?  Mas o primeiro é o dinheiro de manter as coisas no ar. E o segundo é cliente que usa e realmente reclame, realmente dedica e realmente fica ali heavy user, sabe?  Da plataforma, querendo ver, querendo crescer junto, melhorar o dia dele, por causa que eu fiz uma implementação diferente. Então, quanto mais pessoas, assim, melhor.  Então, se você for essa pessoa, quando entrar na empresa, por favor, me chame. indicar a pessoa, você fala, nossa, essa daqui, nossa, está toda hora falando de ferramenta.  Não para nunca, manda ela para mim, sabe, então ficaria muito, muito agradecido.
+
+25:06 - Nádia Motta
+  Essa pessoa, eu vou ver se ela, eu conheço um cara que é muito assim, tudo é ferramenta, ele adora, então, se você estiver disposto, te falo.
+
+25:14 - Fabio El Beck (fabioelbeck@gmail.com)
+  Não, por favor, por favor. E aí, é isso, espero que tenha sido boa para você também a reunião aí, em breve a gente consiga se falar mais e eu mostrar mais coisas legais.  Qual o nome que vocês estão colocando, já tem? Performance, que é a performance de venda como um todo, o end-to-end da performance aumenta, é isso.
+  ACTION ITEM: Email Nádia meeting transcript + roadmap notes - WATCH: https://fathom.video/calls/456096683?timestamp=1536.9999
+
+25:38 - Nádia Motta
+  Legal, sucesso aí para vocês, conta comigo, se precisar pode chamar aí. Obrigadíssimo pelos insights, gravei. Por incrível, eu estou com tempo.
+
+25:47 - Fabio El Beck (fabioelbeck@gmail.com)
+  É, não, ótimo, mas adorei, adorei, foram insights muito bons, vou passar na transcrição aqui, vou colocar para ela e olha, essas são as ideias que a Nádia já deu, eu coloco aí no roadmap e vamos trazê-lo.  Obrigado. Mas é isso, espero que você, muito breve, esteja sem nenhum tempo, mas consiga meia hora para eu reapresentar isso para você e você falar para o seu chefe, ó, vamos lá, vamos lá, que legal.  Prazer, Nádia, obrigado, tchau, tchau.

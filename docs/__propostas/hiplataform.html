@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Implementação - Performancy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            color: #1a2332;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 48px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            transform: translate(30%, -30%);
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header .subtitle {
+            font-size: 18px;
+            opacity: 0.95;
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content {
+            padding: 48px 40px;
+        }
+        
+        .intro {
+            background: linear-gradient(135deg, #f8f9fd 0%, #eef1f7 100%);
+            border-left: 4px solid #667eea;
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 48px;
+        }
+        
+        .intro h2 {
+            color: #667eea;
+            font-size: 22px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .intro p {
+            color: #4a5568;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+            margin-top: 40px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .week {
+            position: relative;
+            margin-bottom: 48px;
+        }
+        
+        .week-marker {
+            position: absolute;
+            left: -32px;
+            top: 8px;
+            width: 32px;
+            height: 32px;
+            background: white;
+            border: 3px solid #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: #667eea;
+            z-index: 2;
+        }
+        
+        .week-content {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 28px;
+            transition: all 0.3s ease;
+        }
+        
+        .week-content:hover {
+            border-color: #667eea;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        .week-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #f1f5f9;
+        }
+        
+        .week-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a2332;
+        }
+        
+        .week-duration {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .activities {
+            margin-top: 20px;
+        }
+        
+        .activity {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            padding: 16px;
+            background: #f8fafc;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .activity:hover {
+            background: #f1f5f9;
+        }
+        
+        .activity-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+            margin-right: 16px;
+        }
+        
+        .activity-content {
+            flex: 1;
+        }
+        
+        .activity-title {
+            font-weight: 600;
+            color: #1a2332;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        
+        .activity-description {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .deliverables {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .deliverables h4 {
+            color: #92400e;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .deliverables h4::before {
+            content: '📦';
+            margin-right: 8px;
+        }
+        
+        .deliverables ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .deliverables li {
+            color: #78350f;
+            font-size: 14px;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .deliverables li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #f59e0b;
+            font-weight: bold;
+        }
+        
+        .parallel-track {
+            background: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 16px;
+            font-size: 14px;
+        }
+        
+        .parallel-track strong {
+            color: #1e40af;
+        }
+        
+        .go-live {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 32px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 48px;
+        }
+        
+        .go-live h3 {
+            font-size: 28px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        
+        .go-live p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+        
+        .footer {
+            background: #f8fafc;
+            padding: 32px 40px;
+            border-top: 2px solid #e2e8f0;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+        }
+        
+        .footer-section h4 {
+            color: #1a2332;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section li {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .footer-section li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 32px 24px;
+            }
+            
+            .header {
+                padding: 32px 24px;
+            }
+            
+            .header h1 {
+                font-size: 28px;
+            }
+            
+            .week-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+            
+            .timeline {
+                padding-left: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Plano de Implementação - 4 Semanas</h1>
+            <p class="subtitle">Roadmap executivo de go-live para Hi Platform</p>
+        </div>
+        
+        <div class="content">
+            <div class="intro">
+                <h2>Visão Geral</h2>
+                <p>Implementação completa em <strong>30 dias</strong> com metodologia ágil e paralela. Sistema operacional para 20 usuários com integração total aos canais de comunicação (MeeTime, Hi Platform, WhatsApp) e CRM (HubSpot), incluindo playbooks automatizados e agente de preenchimento inteligente.</p>
+            </div>
+            
+            <div class="timeline">
+                <!-- SEMANA 1 -->
+                <div class="week">
+                    <div class="week-marker">1</div>
+                    <div class="week-content">
+                        <div class="week-header">
+                            <h3 class="week-title">Semana 1: Integração de Canais</h3>
+                            <span class="week-duration">Dias 1-7</span>
+                        </div>
+                        
+                        <div class="activities">
+                            <div class="activity">
+                                <div class="activity-icon">🔌</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Kickoff & Configuração Técnica</div>
+                                    <div class="activity-description">Reunião de alinhamento com times técnicos (TI, Revenue Ops). Mapeamento de APIs e credenciais de acesso.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity">
+                                <div class="activity-icon">📞</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Integração MeeTime</div>
+                                    <div class="activity-description">Conexão via API aberta do MeeTime para captura de gravações, transcrições e análises existentes. Sincronização bidirecional de dados.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity">
+                                <div class="activity-icon">🌐</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Integração Hi Platform</div>
+                                    <div class="activity-description">Configuração de captura de interações via plataforma própria. Mapeamento de fluxos de comunicação e estrutura de dados.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity">
+                                <div class="activity-icon">💬</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Integração WhatsApp Business</div>
+                                    <div class="activity-description">Configuração de captura de conversas via WhatsApp Business API. Validação de LGPD e filtro por números cadastrados no CRM. Foco no time de pré-vendas (5 pessoas).</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="deliverables">
+                            <h4>Entregas da Semana</h4>
+                            <ul>
+                                <li>3 canais integrados: MeeTime, Hi Platform e WhatsApp Business</li>
+                                <li>Captura de dados em tempo real operacional</li>
+                                <li>Testes de conectividade validados em todos os canais</li>
+                                <li>Dashboard de monitoramento de integrações ativo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SEMANA 2 -->
+                <div class="week">
+                    <div class="week-marker">2</div>
+                    <div class="week-content">
+                        <div class="week-header">
+                            <h3 class="week-title">Semana 2: Geração de Playbooks</h3>
+                            <span class="week-duration">Dias 8-14</span>
+                        </div>
+                        
+                        <div class="activities">
+                            <div class="activity">
+                                <div class="activity-icon">🎯</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Análise de Conversas Históricas</div>
+                                    <div class="activity-description">Processamento de gravações existentes (últimos 90 dias). Identificação de padrões de sucesso por squad/vertical.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity">
+                                <div class="activity-icon">📋</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Construção de Playbooks Dinâmicos</div>
+                                    <div class="activity-description">Criação de playbooks por: (1) Time de Vendas (Sidney - 15 pessoas), (2) Time de Pré-vendas (Fernanda - 5 pessoas). Incluindo etapas de qualificação, descoberta e fechamento.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity">
+                                <div class="activity-icon">✅</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Validação com Lideranças</div>
+                                    <div class="activity-description">Revisão dos playbooks com Sidney e Fernanda. Ajustes conforme especificidades de cada vertical e perfil de cliente.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parallel-track">
+                            <strong>🔄 Execução Paralela:</strong> Enquanto playbooks são gerados, inicia-se a integração com CRM (veja Semana 3).
+                        </div>
+                        
+                        <div class="deliverables">
+                            <h4>Entregas da Semana</h4>
+                            <ul>
+                                <li>Playbooks aprovados para Vendas e Pré-vendas</li>
+                                <li>Biblioteca de melhores práticas por vertical</li>
+                                <li>Scorecards de avaliação de conversas configurados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SEMANA 3 -->
+                <div class="week">
+                    <div class="week-marker">3</div>
+                    <div class="week-content">
+                        <div class="week-header">
+                            <h3 class="week-title">Semana 3: Integração CRM + Agente AI</h3>
+                            <span class="week-duration">Dias 8-21 (paralelo)</span>
+                        </div>
+                        
+                        <div class="activities">
+                            <div class="activity">
+                                <div class="activity-icon">🤖</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Integração HubSpot via API</div>
+                                    <div class="activity-description">Conexão bidirecional com HubSpot. Mapeamento de campos customizados (deals, contacts, activities). Configuração de fluxos de atualização automática.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity">
+                                <div class="activity-icon">⚡</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Agente de Preenchimento Automático</div>
+                                    <div class="activity-description">Configuração de AI Agent para extrair informações de conversas (próximos passos, objeções, dores, decisores) e popular CRM em tempo real.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity">
+                                <div class="activity-icon">🔍</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Testes de Precisão</div>
+                                    <div class="activity-description">Validação de acurácia de preenchimento (meta: 92%+). Ajustes de prompts e configuração de failsafes para campos críticos.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="deliverables">
+                            <h4>Entregas da Semana</h4>
+                            <ul>
+                                <li>HubSpot integrado e recebendo dados automaticamente</li>
+                                <li>Agente AI operacional com acurácia validada (>92%)</li>
+                                <li>Redução de 70%+ no tempo de preenchimento manual de CRM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SEMANA 4 -->
+                <div class="week">
+                    <div class="week-marker">4</div>
+                    <div class="week-content">
+                        <div class="week-header">
+                            <h3 class="week-title">Semana 4: Homologação & Go-Live</h3>
+                            <span class="week-duration">Dias 22-30</span>
+                        </div>
+                        
+                        <div class="activities">
+                            <div class="activity">
+                                <div class="activity-icon">🧪</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Testes End-to-End</div>
+                                    <div class="activity-description">Simulação completa do fluxo: captura de conversa → análise → aplicação de playbook → preenchimento CRM. Testes com usuários piloto (2-3 pessoas de cada time).</div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity">
+                                <div class="activity-icon">🎓</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Treinamento dos Times</div>
+                                    <div class="activity-description">Sessões práticas de 2h para cada squad. Documentação de uso e FAQ. Gravação de vídeos tutoriais para onboarding contínuo.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity">
+                                <div class="activity-icon">🔧</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Correções & Ajustes Finos</div>
+                                    <div class="activity-description">Resolução de bugs identificados em testes. Otimização de performance. Ajustes de UX baseados em feedback dos pilotos.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity">
+                                <div class="activity-icon">🚀</div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Rollout Completo</div>
+                                    <div class="activity-description">Ativação para todos os 20 usuários. Monitoramento ativo nas primeiras 48h. Suporte dedicado via Slack/WhatsApp durante primeira semana.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="deliverables">
+                            <h4>Entregas da Semana</h4>
+                            <ul>
+                                <li>Sistema 100% operacional para 20 usuários</li>
+                                <li>Times treinados e onboardados</li>
+                                <li>Documentação completa entregue</li>
+                                <li>Suporte dedicado ativo (primeiras 2 semanas)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="go-live">
+                <h3>✨ Sistema Operacional em 30 Dias</h3>
+                <p>20 usuários ativos | Integração completa | Playbooks rodando | CRM automatizado</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>📊 Garantias de Entrega</h4>
+                    <ul>
+                        <li>SLA de uptime: 99.5% (AWS/DigitalOcean)</li>
+                        <li>Acurácia de IA: >92% validada</li>
+                        <li>Suporte dedicado: primeiras 60 dias</li>
+                        <li>Ajustes ilimitados: primeiro trimestre</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>🎯 Resultados Esperados (90 dias)</h4>
+                    <ul>
+                        <li>+30% performance de vendas (meta Sidney)</li>
+                        <li>70% redução em preenchimento de CRM</li>
+                        <li>40% redução em tempo de rampagem</li>
+                        <li>Ciclo de vendas otimizado em 20%+</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>🤝 Modelo de Parceria</h4>
+                    <ul>
+                        <li>Calls quinzenais de acompanhamento</li>
+                        <li>Relatórios mensais de performance</li>
+                        <li>Atualizações de playbooks a cada 30 dias</li>
+                        <li>Roadmap co-construído (expansão futura)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

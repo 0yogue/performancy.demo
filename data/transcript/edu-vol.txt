@@ -1,0 +1,149 @@
+Bate Papo | Edu - November 07
+VIEW RECORDING - 21 mins (No highlights)
+@0:00 - Eduardo Voelcker (PipeRun)
+Bom dia, Eduardo. Tudo bem? Tudo bom, Fabio?
+@0:02 - Fabio El Beck (fabioelbeck@gmail.com)
+Acho que não poderia eu ter um time melhor. Eu estava no LinkedIn e escrevi Eduardo, e aí você entrou.
+Não era a hora, mas boa. Obrigado aí. De nada, que isso. Eu sei que as coisas são corridas. Pelo menos é começo de mês, não final de mês, que aí é impossível mesmo.
+Sim, sim.
+@0:24 - Eduardo Voelcker (PipeRun)
+Boa. Verdade.
+@0:25 - Fabio El Beck (fabioelbeck@gmail.com)
+Eduardo, seguinte, é bem rápido, papo rápido, mais para esse entendimento que eu estou aqui nesse primeiro mês, digamos, montando uma ideia, colocando ela para rodar.
+E ela é boa, porque ela integra com o CRM, um dos principais players que eu integro é o CRM, justamente porque preenche automaticamente o CRM, a gente analisa calls e tudo mais.
+E aí eu queria muito ouvir, né? Porque... Mas... Imagino que você deve estar ouvindo o mercado e vendo muita coisa que aparece integrando com o CRM e assim por diante, então eu vou falar brevemente o que eu estou fazendo por aqui e aí fica super à vontade para criticar, sugerir, enfim, super à vontade.
+Aí com uns 15 anos de experiência na área de vendas e liderando equipes, e aí prestando algumas consultorias, eu via que sempre era muito difícil entrar na call com as pessoas, liderar, falar com cada um, enfim, é um tempo que consome e que às vezes você acaba abandonando algumas pessoas, focando em outras e assim por diante, e não é o ideal como líder.
+E aí o meu pensamento foi, legal, onde mora o coração disso tudo, como que eu poderia ajudar todo mundo igualmente e ser até mais estratégico e não muito operacional.
+E aí me veio na cabeça... Ligações, então contato com o cliente. Então, seja por e-mail, WhatsApp ou ligações chamadas de vídeo e tal, você tem ali uma possibilidade muito maior de entender se ele realmente aprendeu, que precisa aprender, se está seguindo um tal do playbook e assim por diante.
+Então, a gente, no primeiro ponto, fez isso. Então, gente fez esse agente que entra junto das reuniões, entende, pega o histórico de WhatsApp e-mail, junta ali e monta um playbook para a pessoa.
+Então, eu sei que o CRM tem a parte do playbook, mas ele não é montado automático, alguém imputa as coisas ali.
+Então, a gente conseguiria pegar essas informações e jogar para dentro do CRM, e a pessoa tem isso lá, né, muito mais fácil, muito mais tranquilo, e aí depois, ao invés de ficar preenchendo, pode prestar atenção na call e depois eu preencho automaticamente para ele dentro do CRM.
+Isso é a primeira versão. nas primeiras duas semanas, e aí eu conversei com algumas pessoas de heavy ops e CROs, que estavam, Fábio, putz, isso é legal, já me dá direções de o que as pessoas estão fazendo, o treinamento que eu posso fazer, o qual assertivo está e tal, mas uma coisa que isso também me geraria muito ouro, seria uma coisa muito valiosa para mim, seria, tá bom, o que isso impacta no meu forecast, o que isso impacta dentro da minha receita, o que isso impacta na minha velocidade de deals, e além disso é, digamos, uma das métricas caem, então, sei lá, meu CAC aumentou, ou o tempo de velocidade diminuiu, alguma coisa de kit médio, enfim, alguma coisa mexeu, que ações eu tomo rápidas, que eu não preciso ficar lendo muita coisa, identificando, o que você pode me sugerir para eu já começar a mudar no dia seguinte.
+E aí a gente fez meio que um dash de, quase que um dash de heavy ops, mas mais para o C-level da empresa olhar isso em profundidade, de acordo com tudo aquilo que foi falado, gravado no CRM, ações e assim por diante.
+Então esse é o ponto que estamos hoje, e aí eu queria ouvir um pouquinho de você, Eduardo. Ficar super à vontade para perguntar, para falar.
+@4:26 - Eduardo Voelcker (PipeRun)
+Deixa eu entender um pouquinho mais, Fábio. Você está construindo uma ferramenta, um agente que vai preencher o CRM, vai analisar, não sei se o que você já tem pronto, ainda está em uma fase de ideação, o que mais ele vai fazer.
+@4:49 - Fabio El Beck (fabioelbeck@gmail.com)
+Então ele, hoje o que a gente tem é, ele é um agente que grava a reunião, te dá... Sites breves na reunião, estou falando muito pouco e tal.
+Com isso, ele pega toda essa transcrição e joga para dentro do CRM, no campo que você...
+@5:09 - Eduardo Voelcker (PipeRun)
+Posso te interromper? Claro, por favor. Ele dá insights ao longo da reunião? Sim.
+@5:18 - Fabio El Beck (fabioelbeck@gmail.com)
+E aí ele joga isso tudo para dentro do CRM, nos campos certos, para ele colocar ali. Então, sei lá, tem um cliente nosso que falou, eu preciso das perguntas de qualificação feitas, como todo mundo, mas ele quer colocar isso dentro do CRM, ele criou uma propriedade lá dentro.
+Então a gente consegue identificar e jogar lá dentro. Então o handoff para o vendedor fica muito mais fácil. Então é isso que a gente já faz.
+Então a gente faz tudo isso, resume e tal, coloca dentro do CRM, bonitinho, e aí com isso a gente consegue entender hábitos, atitudes, comportamentos, ali dos vendedores e transfere isso para uma previsão.
+Possibilidade, forecast e tudo mais dentro de um Dash para os C-Levels entenderem, então por exemplo, eu preciso fechar 2 milhões esse mês, mas o seu recorde da empresa é 900 mil, como você vai fechar 2 milhões, não fecha essa conta, então o que você está fazendo para chegar a esses 2 milhões, o que você está fazendo para chegar na sua meta?
+Então, eu olhando para trás, é olhar para trás para prever futuro e projeções e previsibilidade, então não é aquela coisa, se a gente fechou isso, ano passado a gente fechou 2 milhões, esse a gente tem que fechar 10% a mais, não sei como está o mercado, ano que vem, por exemplo, vai ter Copa, eleição, 11 feriados, vai vender a mesma coisa que esse ano?
+Não sei, então é isso, a gente consegue ajudar nesses cálculos. E aí a gente tem, tem isso e hoje a gente está construindo um SDR AI também.
+que faz todo o trabalho junto com o inbound. Então pingou o inbound, o SDR manda mensagem ou liga e faz toda a qualificação para passar direto para o vendedor.
+Para o SDR não ter que ficar perdendo tempo com isso e tal, vai ser uma coisa um pouco mais automatizada.
+O passo dois vai ser análise de perfil, o que está ligando, a análise da empresa e ver como melhorar o marketing para o inbound vir melhor e fazer um ciclo mais qualificado disso tudo.
+Tá.
+@7:32 - Eduardo Voelcker (PipeRun)
+Mas é isso, basicamente. E como é que foi, vamos lá, gravar os insights, preencher CRM, ok. Mas daí a ele gerar essa previsibilidade.
+Porque se é um processo de venda, tu tem lá uma demonstração, tu gravou, gerou um insight, mas tu tem uma série de touches posteriores que vão definir ali a previsibilidade de fechar aquela venda, previsibilidade de fechar aquela venda, a temperatura dela.
+Fala, o bom bem mapeado está o negócio pelo vendedor, enfim, e aí pode ser um contato por e-mail, por telefone, uma outra reunião, como é que esse agente vai pegar tudo isso e gerar essa previsibilidade?
+@8:13 - Fabio El Beck (fabioelbeck@gmail.com)
+Isso, a gente está em integração em todos os sistemas de comunicação com o cliente, seja WhatsApp, seja e-mail, seja Telegram, seja qualquer um que vocês usem, a gente mapeia.
+Então a gente sabe do que ele está falando, qual é a pessoa, qual foi a fala, a gente vai atualizando isso, falou, opa, foi mais um passo, deu mais um passo, falou com não sei quem, ou, ah, está três dias sem falar com a pessoa, ou falou que ia mandar um contrato e não mandou, falou que ia mandar material, esse é o que me mata, ah, eu mando material e a se fala, morreu, então, e aí, mandou material e aí, você acabou de desistir da sua venda, mas enfim.
+Então são esse tipo de coisa que a gente vai hackeando, traqueando e... Obrigado. Obrigado. So put it in the system in our logic, which is our differential, which is all the system to be analysing this and playing on the metrics and saying this is good, this is not good, good, this not this is good, this is is for example, I'm going to with Cilevo in some place, or I'm going talk with Cilevo in some place, there, complex problem, you call the CEO, just call the director of vent, then call someone from the same level to do it, then you will fall with person, then you will a person someone, put it on the agenda, talk about it is important, so on it is.
+@9:39 - Eduardo Voelcker (PipeRun)
+And what does it do about, in which phase is project?
+@9:43 - Fabio El Beck (fabioelbeck@gmail.com)
+Hoje a gente está desenvolvendo, finalizando com um cliente mais parrudo, com 100 pessoas no tipo de vendas, para entregar isso agora, começar a fazer todas as automações.
+Mas entregar, começar o Go Live em janeiro, então já está praticamente pronto, são ajustes de cada uma das empresas, então a gente não faz aquela coisa meio, é um pouco de prateleira, então, ah, isso basicamente é o que a gente faz, mas, ah, Fabio, tenho tal sistema, eu tenho tal playbook, tenho, tá bom, a gente sobe no sistema, a gente vai adaptando e vai fazer uma coisa para vocês, não para, não genérico, sabe, ah, pílula mágica, faz assim que funciona, não existe isso.
+@10:30 - Eduardo Voelcker (PipeRun)
+E integra com quais CRMs?
+@10:33 - Fabio El Beck (fabioelbeck@gmail.com)
+Hoje, Zorro, Salesforce e HubSpot, e depois dessa conversa espero com o PipeRun, né, mas é isso, mas a gente vai pela demanda dos clientes, então a gente fala, putz, eu tenho esse tech stack aqui e eu preciso disso, então a gente vai integrando a medida da necessidade.
+E o que é que tu precisa para fazer essa integração?
+@11:01 - Eduardo Voelcker (PipeRun)
+A PI só.
+@11:03 - Fabio El Beck (fabioelbeck@gmail.com)
+A gente pega a PI e faz da API.
+@11:10 - Eduardo Voelcker (PipeRun)
+E o modelo de negócio, o valor é por usuário, é por...? Por usuário, por usuário. Quanto é que é por usuário?
+@11:20 - Fabio El Beck (fabioelbeck@gmail.com)
+Depende do tamanho da equipe, a gente varia o preço, não tem um preço fechado de novo. Quantas pessoas você tem vendas, quantas vão usar, quantas vão gravar, porque aí tem todo o volume de dados aqui que eu preciso tratar, então eu preciso entender sempre a quantidade de pessoas e tudo mais.
+@11:43 - Eduardo Voelcker (PipeRun)
+Mas o que é o teu, sei lá, o menor pacote, a menor quantidade de usuários e fãs?
+@11:49 - Fabio El Beck (fabioelbeck@gmail.com)
+Ah, tô fechando, tô tentando vejar um de três, três a cinco pessoas, assim, bem pouco mesmo, bem pequeno. Até de cinco.
+@11:56 - Eduardo Voelcker (PipeRun)
+E aí custaria quanto? .
+@12:02 - Fabio El Beck (fabioelbeck@gmail.com)
+Eu preciso ver a complexidade do que eles usam, ferramentas e tudo mais. Gira em torno de uns 500, sei lá, por pessoa.
+@12:11 - Eduardo Voelcker (PipeRun)
+500 por usuário. É, mais ou menos. Cara, olha, interessante isso aí, porque assim ó, esses agentes que gravam reunião, que transcrevem, que vejam sem rem, isso aí tem uns montes já.
+Sim. Mas, olhando assim ao meu lado, eu tenho isso, mas eu continuo tendo que entrar em oportunidade por oportunidade, olhar o que a Yá lá descreveu, fazer pergunta para ela, ela me responder.
+É, ainda sou eu que preciso gerar dados disso aí.
+@12:55 - Fabio El Beck (fabioelbeck@gmail.com)
+Ou seja, reduzir um pouco do seu tempo, mas ainda tem que ter tempo nisso. Sim. Sim. É.
+@13:00 - Eduardo Voelcker (PipeRun)
+E aí, sei lá, pegar, cara, olhar o funil de alguém e ver, pô, essa negociação está bem conduzida, essa não está, essa está em risco, essa aqui está com uma previsão correta, essa aqui, eu vejo bastante valor nisso.
+Bacana, bacana. É um trabalho que hoje o gestor de venda, você tem que olhar o CRM de cada um, você tem que fazer reunião de revisão de forecast, tem que, sabe, desmiuçar cada negociação, tá, mas, cara, o que combinou?
+Como é que foi isso? O que é falar? Sabe, tu tem que entrar muito no detalhe para ter essa, essa confiabilidade do, né, do como está sendo tocada a negociação, onde é que tem risco, ou o que que faltou fazer.
+Perfeito, perfeito. É, eu acho, cara, eu não sei se existe ferramenta que faz isso, eu já vi ferramenta, ah, faz forecast, faz não sei o que, sabe, fazem pedacinhos, né, mas...
+Perfeito.
+@14:00 - Fabio El Beck (fabioelbeck@gmail.com)
+A minha ideia é me clonar, vamos dizer assim. Nos clonar, né? Nos clonar. Eu não quero ficar falando com as pessoas, eu quero estrategicamente entender o que está acontecendo, onde a gente começou na semana, na segunda-feira, onde a gente terminou na sexta-feira, para eu planejar a segunda-feira e assim por diante.
+Então, é uma cabeça de, se eu fosse fazer o melhor sistema possível para mim, como seria? É o que eu estou fazendo.
+Eu acho que os vendedores, redes de vendas e todo mundo meio que pensa igual, tem o mesmo problema, Então, esse é o grande lance.
+Estou fazendo um end-to-end aí, começando por essa parte, que é mais o coração da coisa.
+@14:47 - Eduardo Voelcker (PipeRun)
+E vocês já lançaram isso no mercado?
+@14:51 - Fabio El Beck (fabioelbeck@gmail.com)
+Não, hoje está bem bootstrap, bem raso. Estou falando com algumas pessoas, validando... proposta, validando o conceito da coisa, mas a gente está assim, tem amigos que eu converso e o cara fala, cara, isso é bom, preciso, tem três ou tem cem pessoas, a gente vai fazer, e aí eu estou indo nessa linha, então, hoje eu até no meu LinkedIn ele está, estou revolucionando vendas, é isso, não estou fazendo mais nada, não estou com ele na rua, vamos dizer assim, a gente está fechando os primeiros dez clientes mais ou menos, ou os quinhentos a mil usuários aí, para a gente falar, legal, vamos ter que fechar as portas e rodar isso até ficar maravilha, assim, tem um negócio absurdo, a gente abre para o mercado e aí avança com tudo.
+Legal, legal, e o que é o plano aí, próximos passos, qual é tua expectativa?
+@15:58 - Eduardo Voelcker (PipeRun)
+Obrigado.
+@15:59 - Fabio El Beck (fabioelbeck@gmail.com)
+Obrigado. So able client, and then with this I managed to make a wonderful product. The guys say, just me, I'm just leaving the product as incredible as possible here with you, to bring it to a great scale, to be a famous product made by AI, conduzido por humanos, feito por AI, sabe, então escala bem, não precisa de tanta gente, precisa de tanta coisa, um vai indicando o outro, as coisas vão acontecendo.
+Isso é o que estamos fazendo hoje. Tu de onde, Fábio?
+@16:50 - Eduardo Voelcker (PipeRun)
+Eu em São Paulo.
+@16:52 - Fabio El Beck (fabioelbeck@gmail.com)
+Estou em São Paulo.
+@16:55 - Eduardo Voelcker (PipeRun)
+Fábio. E desse papo aqui, qual é o teu objetivo? O objetivo?
+@17:00 - Fabio El Beck (fabioelbeck@gmail.com)
+Tive que saber um pouco do que você já viu, se isso, por exemplo, encaixaria dentro do PipeRun, falar, cara, até a gente usaria isso, é legal, ou não, CRM já faz tudo, ou a gente não precisa, ou não tem ferramentas externas disso, e como que você vê esse posicionamento, e depois também, caso, porque eu sei que você tem bastante contato, gente que fala com você toda hora, dá mentorias e tudo mais, de como que o mercado vê isso, e se tem alguém para indicação, para ser um desses dez clientes aí, para a gente, para eu fechar e conseguir ter essa, tipo, heavy user, sabe, que fala, cara, o cara, o meu brinco, é o cara que mais testa a ferramenta de vendas possível, que dá palpite em tudo, quer montar um monte de ferramenta junto, esse tipo de pessoa, então acho que seriam mais esses três pontos, tá aí?
+ACTION ITEM: Align w/ Fausto, CEO, CTO; send Fabio Nov 17+ slots; schedule follow-up - WATCH
+Ah, legal, legal.
+@18:00 - Eduardo Voelcker (PipeRun)
+Cara, a PipeRun, a gente é super aberto a novas ferramentas, a já testou um monte de coisa, gente tem uma série de parcerias, eu acho que faz bastante sentido, tá?
+Eu acho que vale a gente fazer um segundo papo e eu trazer o nosso CEO, nosso CRO, acho que, e o CTO também, eu vou dar uma conversada com eles aqui internamente, o senhor está de férias, volta.
+14, se eu não me engano, uma semana, é, deixa eu ver, não, até dia 14, 16, então acho que ele volta 17.
+Deixa eu ter uma agenda aqui, a gente pode marcar um outro papo?
+@18:43 - Fabio El Beck (fabioelbeck@gmail.com)
+Claro, eu estava até, falei até com o CRO, qual é nome dele mesmo?
+@18:50 - Eduardo Voelcker (PipeRun)
+Fausto?
+@18:51 - Fabio El Beck (fabioelbeck@gmail.com)
+Isso, Fausto, isso, ele me passou o telefone dele, ele falou, cara, fala sim, vamos conversar, então acho que ele também...
+Tu conseguiu já falar com ele ele ou... É, eu falei com ele pelo LinkedIn, ele falou, cara, me dá um ping mais pra frente, vamos conversar, agora tava corrido pra ele.
+Isso, não, essa semana a gente tá, e semana que vem a gente... Isso, falou que tava muito, muito, muito complicado.
+Aí eu até falei, oi, não conseguiu, então, de novo, mais uma vez, obrigado. Mas é isso, acho que vai super de encontro, assim.
+Tá. Ele já sabe, você falou, pô, eu já falei pro Fábio, eu já validei, vamos conversar.
+@19:25 - Eduardo Voelcker (PipeRun)
+bom, eu vou dar um toque nele, eu vejo as agendas, e aí eu te dou umas opções de horário aí.
+Perfeito. E a gente marca lá pra semana do dia... Sem ser semana que vem, Nauter. Tá bom, tá bom, tá ali pro dia 17.
+Isso.
+@19:43 - Fabio El Beck (fabioelbeck@gmail.com)
+Combinado, combinado, perfeito. E aí você vai chamar o CEO, o CTO e o CRO, é isso?
+ACTION ITEM: Prepare demo w/ anonymized data for PipeRun follow-up - WATCH
+@19:48 - Eduardo Voelcker (PipeRun)
+Isso aí. Pra gente olhar isso com o tempo, tá bom. Fechado, tá bom, tá bom.
+@19:54 - Fabio El Beck (fabioelbeck@gmail.com)
+Espero já ter alguma coisa rodando pra conseguir mostrar pra vocês. Obrigado.
+@19:59 - Eduardo Voelcker (PipeRun)
+Obrigado. Obrigado.
+@20:00 - Fabio El Beck (fabioelbeck@gmail.com)
+A gente tem os dados dos clientes e tal, a gente não pode ficar mostrando muito, mas aí eu vejo como que a gente prepara esse ambiente para mostrar para vocês, dados fictícios, e aí vocês conseguem entender também.
+@20:14 - Eduardo Voelcker (PipeRun)
+Tá, que é chato. Mas boa.
+@20:17 - Fabio El Beck (fabioelbeck@gmail.com)
+Tá bom, Edu? Acho que é isso. E tiver qualquer coisa nesse meio do caminho, por favor, entre em contato, pode falar comigo, fico à disposição.
+@20:26 - Eduardo Voelcker (PipeRun)
+Tá bom. Obrigado. Combinado. Prazer. Tá Valeu aí, Fabio, prazer. abraço, eu vou agora as datas aí. Valeu. legal. Um abraço.
+Tchau, tchau. Tchau, tchau.

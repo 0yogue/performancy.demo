@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PERFORMANCY - Segurança e Conformidade LGPD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --primary: #D06840;
+      --primary-light: #E07A4F;
+      --accent: #C99030;
+      --background: #FBF8F5;
+      --background-alt: #F5F0EB;
+      --card: #FFFFFF;
+      --text: #3D2F3A;
+      --text-muted: #6B5B68;
+      --success: #4CAF50;
+      --warning: #E5A94E;
+      --danger: #E05555;
+      --border: #E8E0DA;
+    }
+    
+    body { font-family: 'Montserrat', system-ui, sans-serif; background: var(--background); color: var(--text); overflow: hidden; }
+    .slide { display: none; min-height: 100vh; padding: 50px 70px; animation: slideIn 0.4s ease; background: var(--background); }
+    .slide.active { display: flex; flex-direction: column; }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+    
+    h1 { font-size: 2.4rem; font-weight: 700; color: var(--primary); margin-bottom: 30px; display: flex; align-items: center; gap: 15px; }
+    h1::before { content: ''; display: block; width: 5px; height: 36px; background: linear-gradient(180deg, var(--primary), var(--accent)); border-radius: 3px; }
+    h2 { font-size: 1.3rem; font-weight: 600; color: var(--accent); margin: 25px 0 15px; }
+    h3 { font-size: 1.05rem; font-weight: 600; color: var(--text); margin: 15px 0 10px; }
+    .content { flex: 1; font-size: 1.05rem; line-height: 1.7; }
+    
+    ul { margin-left: 25px; list-style: none; }
+    li { margin: 8px 0; padding-left: 22px; position: relative; }
+    li::before { content: '›'; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+    
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    
+    .card { background: var(--card); padding: 22px; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .card.highlight { border-left: 4px solid var(--primary); }
+    .card.success { border-left: 4px solid var(--success); }
+    .card.warning { border-left: 4px solid var(--warning); }
+    .card.danger { border-left: 4px solid var(--danger); }
+    .card h3 { margin-top: 0; display: flex; align-items: center; gap: 10px; }
+    
+    .table-container { background: var(--card); border-radius: 12px; overflow: hidden; margin: 15px 0; border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 14px 18px; text-align: left; border-bottom: 1px solid var(--border); }
+    th { background: var(--background-alt); color: var(--primary); font-weight: 600; font-size: 0.9rem; }
+    td { font-size: 0.95rem; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: var(--background-alt); }
+    
+    .progress-row { display: flex; align-items: center; margin: 15px 0; gap: 20px; }
+    .progress-label { width: 110px; font-weight: 600; font-size: 0.9rem; }
+    .progress-bar { flex: 1; height: 26px; background: var(--background-alt); border-radius: 13px; overflow: hidden; border: 1px solid var(--border); }
+    .progress-fill { height: 100%; border-radius: 13px; display: flex; align-items: center; justify-content: flex-end; padding-right: 12px; font-weight: 600; font-size: 0.8rem; color: white; }
+    .progress-fill.high { background: linear-gradient(90deg, var(--success), #6BC76B); }
+    .progress-fill.medium { background: linear-gradient(90deg, var(--warning), #F5C060); }
+    .progress-desc { width: 200px; font-size: 0.85rem; color: var(--text-muted); }
+    
+    /* Architecture Diagram */
+    .arch-container { display: flex; flex-direction: column; gap: 20px; padding: 20px 0; }
+    .arch-row { display: flex; align-items: center; justify-content: center; gap: 15px; }
+    .arch-box { background: var(--card); border: 2px solid var(--border); border-radius: 16px; padding: 18px 25px; text-align: center; min-width: 150px; position: relative; transition: all 0.3s; }
+    .arch-box:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+    .arch-box .icon { font-size: 2rem; margin-bottom: 8px; }
+    .arch-box .title { font-weight: 700; font-size: 0.9rem; color: var(--text); }
+    .arch-box .subtitle { font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; }
+    .arch-box.highlight { background: linear-gradient(135deg, var(--primary), var(--primary-light)); border-color: var(--primary); }
+    .arch-box.highlight .title, .arch-box.highlight .subtitle { color: white; }
+    .arch-box.client { border-color: #4CAF50; background: #E8F5E9; }
+    .arch-box.llm { border-color: #2196F3; background: #E3F2FD; }
+    
+    .arch-arrow { display: flex; flex-direction: column; align-items: center; color: var(--primary); }
+    .arch-arrow .arrow { font-size: 1.8rem; font-weight: bold; }
+    .arch-arrow .label { font-size: 0.7rem; color: var(--text-muted); max-width: 80px; text-align: center; }
+    .arch-arrow-down { font-size: 1.5rem; color: var(--primary); }
+    
+    .arch-section { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    .arch-section-label { font-size: 0.7rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+    
+    .arch-group { display: flex; gap: 20px; align-items: flex-start; }
+    .arch-vertical { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    
+    .two-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+    
+    .tier { background: var(--card); padding: 22px; border-radius: 12px; border: 1px solid var(--border); }
+    .tier.featured { border: 2px solid var(--primary); position: relative; }
+    .tier.featured::before { content: 'RECOMENDADO'; position: absolute; top: -10px; left: 20px; background: var(--primary); color: white; padding: 3px 10px; border-radius: 4px; font-size: 0.65rem; font-weight: 700; }
+    .tier h3 { color: var(--primary); margin-bottom: 12px; }
+    .tier ul { margin-left: 0; }
+    .tier li { font-size: 0.9rem; }
+    
+    .nav { position: fixed; bottom: 25px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; background: var(--card); padding: 12px 25px; border-radius: 50px; border: 1px solid var(--border); box-shadow: 0 4px 20px rgba(0,0,0,0.08); z-index: 100; }
+    .nav button { background: var(--primary); color: white; border: none; padding: 10px 22px; border-radius: 25px; cursor: pointer; font-family: inherit; font-size: 0.85rem; font-weight: 600; transition: all 0.3s; }
+    .nav button:hover { background: var(--primary-light); transform: scale(1.03); }
+    .nav button:disabled { background: var(--border); color: var(--text-muted); cursor: not-allowed; transform: none; }
+    
+    .cover { justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg, var(--background) 0%, var(--background-alt) 100%); }
+    .cover h1 { font-size: 3.5rem; margin-bottom: 15px; justify-content: center; }
+    .cover h1::before { display: none; }
+    .cover .subtitle { font-size: 1.6rem; color: var(--text); margin-bottom: 10px; }
+    .cover .date { font-size: 1rem; color: var(--text-muted); margin-top: 25px; }
+    .cover .badge { display: inline-block; background: var(--primary); color: white; padding: 8px 20px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-top: 35px; }
+    
+    .faq-item { background: var(--card); padding: 18px 22px; border-radius: 10px; margin: 12px 0; border: 1px solid var(--border); border-left: 4px solid var(--primary); }
+    .faq-item .question { font-weight: 600; color: var(--primary); margin-bottom: 8px; }
+    .faq-item .answer { color: var(--text-muted); font-size: 0.9rem; }
+    
+    code { background: rgba(208, 104, 64, 0.1); color: var(--primary); padding: 2px 7px; border-radius: 4px; font-family: monospace; font-size: 0.88em; }
+    .check { color: var(--success); }
+    .pending { color: var(--warning); }
+    .soon { color: var(--text-muted); }
+    
+    .flow { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 20px 0; flex-wrap: wrap; }
+    .flow-box { background: var(--card); padding: 15px 22px; border-radius: 10px; text-align: center; min-width: 140px; border: 1px solid var(--border); }
+    .flow-box .label { font-weight: 600; font-size: 0.85rem; }
+    .flow-box .desc { font-size: 0.75rem; color: var(--text-muted); margin-top: 3px; }
+    .flow-arrow { font-size: 1.3rem; color: var(--primary); }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDE 1: CAPA -->
+  <section class="slide cover active">
+    <h1>PERFORMANCY</h1>
+    <p class="subtitle">Conformidade e Segurança de Dados</p>
+    <p class="date">Apresentação Técnica • Dezembro 2025</p>
+    <span class="badge">🔒 LGPD Compliant</span>
+  </section>
+
+  <!-- SLIDE 2: PROTEÇÃO DE DADOS -->
+  <section class="slide">
+    <h1>Proteção de Dados Pessoais</h1>
+    <div class="content">
+      <div class="table-container">
+        <table>
+          <tr><th>Dado</th><th>Classificação</th><th>Proteção Implementada</th></tr>
+          <tr><td><strong>Senhas</strong></td><td><span class="check">●</span> Sensível</td><td><code>bcrypt</code> hash com salt (nunca texto plano)</td></tr>
+          <tr><td><strong>Tokens de Integração</strong></td><td><span class="check">●</span> Sensível</td><td><code>AES-256-GCM</code> criptografia simétrica</td></tr>
+          <tr><td><strong>Emails e Dados Pessoais</strong></td><td><span class="pending">●</span> Pessoal</td><td>PostgreSQL com acesso restrito por RBAC</td></tr>
+          <tr><td><strong>Transcrições de Calls</strong></td><td><span class="check">●</span> Sensível</td><td>Pipeline de anonimização antes de LLM</td></tr>
+        </table>
+      </div>
+      
+      <h2>🛡️ Controle de Acesso (RBAC)</h2>
+      <div class="grid-3">
+        <div class="card highlight">
+          <h3>4 Níveis Hierárquicos</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">ADMIN → DIRECTOR → MANAGER → AGENT<br>Permissões granulares por role</p>
+        </div>
+        <div class="card highlight">
+          <h3>Multi-Tenant Isolation</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Cada empresa acessa apenas seus dados via <code>company_id</code></p>
+        </div>
+        <div class="card highlight">
+          <h3>Audit Logs</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Registro de IP, timestamp, user_id e action</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3: AUTENTICAÇÃO -->
+  <section class="slide">
+    <h1>Autenticação & Autorização</h1>
+    <div class="content">
+      <div class="grid-2">
+        <div>
+          <h2>✅ Implementado</h2>
+          <div class="card success">
+            <ul>
+              <li>Sessões <code>JWT</code> seguras (7 dias de expiração)</li>
+              <li>Rate limiting contra força bruta (100 req/min)</li>
+              <li>Validação de input com <code>Zod</code> em todas APIs</li>
+              <li>HTTPS obrigatório em produção</li>
+              <li>CORS restrito a origens autorizadas</li>
+              <li>Middleware de autenticação em rotas protegidas</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h2>📋 Direitos do Titular (Art. 18 LGPD)</h2>
+          <div class="card warning">
+            <ul>
+              <li><span class="check">✓</span> <strong>Acesso:</strong> Visualização de todos dados pessoais</li>
+              <li><span class="check">✓</span> <strong>Portabilidade:</strong> Export disponível (DIRECTOR+)</li>
+              <li><span class="pending">⏳</span> <strong>Esquecimento:</strong> Em implementação Q1/2025</li>
+              <li><span class="check">✓</span> <strong>Consentimento:</strong> Termos claros sobre gravação</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <h2 style="margin-top: 25px;">🔐 Stack de Segurança</h2>
+      <div class="grid-3">
+        <div class="card"><code>NextAuth.js</code><br><span style="font-size:0.8rem;color:var(--text-muted)">Gestão de sessões</span></div>
+        <div class="card"><code>Prisma ORM</code><br><span style="font-size:0.8rem;color:var(--text-muted)">Queries parametrizadas</span></div>
+        <div class="card"><code>Zod</code><br><span style="font-size:0.8rem;color:var(--text-muted)">Validação de schemas</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4: ARQUITETURA DE ANONIMIZAÇÃO -->
+  <section class="slide">
+    <h1>Arquitetura de Anonimização para LLMs</h1>
+    <div class="content">
+      <div class="arch-container">
+        <!-- Linha Principal do Fluxo -->
+        <div class="arch-row">
+          <div class="arch-box client">
+            <div class="icon">🏢</div>
+            <div class="title">CLIENTE</div>
+            <div class="subtitle">CRM / Google Meet / Zoom</div>
+          </div>
+          
+          <div class="arch-arrow">
+            <div class="label">Dados brutos</div>
+            <div class="arrow">→</div>
+          </div>
+          
+          <div class="arch-vertical">
+            <div class="arch-box">
+              <div class="icon">💾</div>
+              <div class="title">BANCO LOCAL</div>
+              <div class="subtitle">PostgreSQL + AES-256</div>
+            </div>
+            <div class="arch-arrow-down">↓</div>
+            <div class="arch-box highlight">
+              <div class="icon">🔒</div>
+              <div class="title">ANONIMIZAÇÃO</div>
+              <div class="subtitle">Remove PII, mascara nomes</div>
+            </div>
+          </div>
+          
+          <div class="arch-arrow">
+            <div class="label">Só contexto anonimizado</div>
+            <div class="arrow">→</div>
+          </div>
+          
+          <div class="arch-box llm">
+            <div class="icon">🤖</div>
+            <div class="title">LLM EXTERNA</div>
+            <div class="subtitle">OpenAI / Claude API</div>
+          </div>
+          
+          <div class="arch-arrow">
+            <div class="label">Insights</div>
+            <div class="arrow">→</div>
+          </div>
+          
+          <div class="arch-box">
+            <div class="icon">📊</div>
+            <div class="title">DASHBOARD</div>
+            <div class="subtitle">Re-associação interna</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="two-cols" style="margin-top: 15px;">
+        <div class="card danger">
+          <h3><span style="font-size:1.2rem">❌</span> NUNCA Enviamos às LLMs</h3>
+          <ul>
+            <li>Nomes reais de pessoas ou empresas</li>
+            <li>Emails, telefones ou CPF/CNPJ</li>
+            <li>Dados financeiros ou de cartão</li>
+            <li>IDs internos do banco de dados</li>
+          </ul>
+        </div>
+        <div class="card success">
+          <h3><span style="font-size:1.2rem">✅</span> Enviamos (Anonimizado)</h3>
+          <ul>
+            <li>Contexto: <code>[VENDEDOR] disse X para [CLIENTE]</code></li>
+            <li>Estrutura da negociação sem valores</li>
+            <li>Metodologia de vendas aplicada</li>
+            <li>Sentimento e tom da conversa</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 5: NIST -->
+  <section class="slide">
+    <h1>Framework NIST Cybersecurity (CSF 2.0)</h1>
+    <div class="content">
+      <div class="progress-row">
+        <span class="progress-label">IDENTIFY</span>
+        <div class="progress-bar"><div class="progress-fill high" style="width: 85%;">85%</div></div>
+        <span class="progress-desc">Inventário de ativos completo</span>
+      </div>
+      <div class="progress-row">
+        <span class="progress-label">PROTECT</span>
+        <div class="progress-bar"><div class="progress-fill high" style="width: 90%;">90%</div></div>
+        <span class="progress-desc">Criptografia, RBAC, Multi-tenant</span>
+      </div>
+      <div class="progress-row">
+        <span class="progress-label">DETECT</span>
+        <div class="progress-bar"><div class="progress-fill medium" style="width: 70%;">70%</div></div>
+        <span class="progress-desc">Logs de auditoria e alertas</span>
+      </div>
+      <div class="progress-row">
+        <span class="progress-label">RESPOND</span>
+        <div class="progress-bar"><div class="progress-fill medium" style="width: 60%;">60%</div></div>
+        <span class="progress-desc">Plano de resposta a incidentes</span>
+      </div>
+      <div class="progress-row">
+        <span class="progress-label">RECOVER</span>
+        <div class="progress-bar"><div class="progress-fill medium" style="width: 65%;">65%</div></div>
+        <span class="progress-desc">Backups diários + DR Plan</span>
+      </div>
+      
+      <h2 style="margin-top: 30px;">📊 Status de Compliance</h2>
+      <div class="grid-3">
+        <div class="card success"><strong>LGPD</strong><br><span class="check">✓</span> Em conformidade</div>
+        <div class="card warning"><strong>NIST CSF</strong><br><span class="pending">◐</span> 74% implementado</div>
+        <div class="card"><strong>SOC 2</strong><br><span class="soon">○</span> Sob demanda</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 6: TIERS -->
+  <section class="slide">
+    <h1>Níveis de Adequação</h1>
+    <div class="content">
+      <div class="grid-3">
+        <div class="tier">
+          <h3>🟢 Tier 1 - Padrão</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 12px;">Incluído em todos os planos</p>
+          <ul>
+            <li><span class="check">✓</span> LGPD Compliance</li>
+            <li><span class="check">✓</span> Criptografia AES-256</li>
+            <li><span class="check">✓</span> RBAC 4 níveis</li>
+            <li><span class="check">✓</span> Audit Logs</li>
+            <li><span class="check">✓</span> Backups diários</li>
+          </ul>
+        </div>
+        <div class="tier featured">
+          <h3>🟡 Tier 2 - Enhanced</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 12px;">Sob demanda</p>
+          <ul>
+            <li><span class="pending">⏳</span> 2FA (Two-Factor)</li>
+            <li><span class="pending">⏳</span> SSO via SAML/OAuth</li>
+            <li><span class="pending">⏳</span> IP Whitelist</li>
+            <li><span class="pending">⏳</span> Retenção customizada</li>
+            <li><span class="pending">⏳</span> Logs para SIEM</li>
+          </ul>
+        </div>
+        <div class="tier">
+          <h3>🔵 Tier 3 - Enterprise</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 12px;">Sob contrato</p>
+          <ul>
+            <li><span class="soon">○</span> SOC 2 Type II</li>
+            <li><span class="soon">○</span> ISO 27001 Alignment</li>
+            <li><span class="soon">○</span> Pentest anual</li>
+            <li><span class="soon">○</span> DPA customizado</li>
+            <li><span class="soon">○</span> Single-tenant</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h2 style="margin-top: 30px;">📞 Processo de Adequação</h2>
+      <div class="flow">
+        <div class="flow-box"><div class="label">1. ASSESSMENT</div><div class="desc">1-2 dias</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><div class="label">2. PLANEJAMENTO</div><div class="desc">1 semana</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><div class="label">3. IMPLEMENTAÇÃO</div><div class="desc">2-4 semanas</div></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><div class="label">4. VALIDAÇÃO</div><div class="desc">1 semana</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 7: DOCUMENTAÇÃO -->
+  <section class="slide">
+    <h1>Documentação Técnica</h1>
+    <div class="content">
+      <div class="table-container">
+        <table>
+          <tr><th>Documento</th><th>Descrição</th><th>Status</th></tr>
+          <tr><td><code>RBAC.md</code></td><td>Sistema completo de permissões (4 roles)</td><td><span class="check">✓</span> Disponível</td></tr>
+          <tr><td><code>SECURITY-TESTS.md</code></td><td>Testes de segurança realizados</td><td><span class="check">✓</span> Disponível</td></tr>
+          <tr><td><code>SECURITY-AUDIT-EXTENSION.md</code></td><td>Auditoria da extensão Chrome</td><td><span class="check">✓</span> Disponível</td></tr>
+          <tr><td><code>SCHEMA.md</code></td><td>Estrutura do banco PostgreSQL</td><td><span class="check">✓</span> Disponível</td></tr>
+          <tr><td><code>API.md</code></td><td>Documentação das APIs REST</td><td><span class="check">✓</span> Disponível</td></tr>
+        </table>
+      </div>
+      
+      <h2 style="margin-top: 25px;">🛠️ Stack Técnico</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Frontend</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Next.js 15 • React 19 • TypeScript<br>TailwindCSS • Shadcn/UI</p>
+        </div>
+        <div class="card">
+          <h3>Backend</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Next.js API Routes • Prisma ORM<br>PostgreSQL • Redis</p>
+        </div>
+        <div class="card">
+          <h3>Infraestrutura</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">VPS Linux • PM2 • Nginx<br>SSL/TLS 1.3 • Backups S3</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 8: FAQ -->
+  <section class="slide">
+    <h1>Perguntas Frequentes</h1>
+    <div class="content">
+      <div class="faq-item">
+        <p class="question">Q: Os dados do meu time ficam seguros?</p>
+        <p class="answer">Sim. Utilizamos criptografia AES-256-GCM para dados sensíveis, isolamento multi-tenant (sua empresa só vê seus dados), e controle de acesso granular por função.</p>
+      </div>
+      <div class="faq-item">
+        <p class="question">Q: A IA externa (ChatGPT/Claude) vê os dados dos meus clientes?</p>
+        <p class="answer">Não. Antes de enviar qualquer dado para análise de IA, removemos todos os dados pessoais identificáveis (PII). A IA recebe apenas contexto anonimizado como "[VENDEDOR] disse X para [CLIENTE]".</p>
+      </div>
+      <div class="faq-item">
+        <p class="question">Q: Vocês guardam as gravações das calls?</p>
+        <p class="answer">Armazenamos transcrições com consentimento explícito. O cliente pode solicitar exclusão a qualquer momento (Direito ao Esquecimento - LGPD Art. 18).</p>
+      </div>
+      <div class="faq-item">
+        <p class="question">Q: Posso ter um ambiente dedicado?</p>
+        <p class="answer">Sim. No plano Enterprise, oferecemos single-tenant deployment com banco de dados isolado e infraestrutura dedicada.</p>
+      </div>
+      
+      <div style="text-align: center; margin-top: 35px; color: var(--text-muted);">
+        <p>📧 <strong>yogue@performancy.com.br</strong></p>
+        <p style="font-size: 0.85rem; margin-top: 8px;">Versão 1.0 • Dezembro 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="nav">
+    <button id="prev" onclick="changeSlide(-1)">← Anterior</button>
+    <button id="next" onclick="changeSlide(1)">Próximo →</button>
+  </nav>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const total = slides.length;
+    
+    function showSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (n + total) % total;
+      slides[currentSlide].classList.add('active');
+      document.getElementById('prev').disabled = currentSlide === 0;
+      document.getElementById('next').disabled = currentSlide === total - 1;
+    }
+    
+    function changeSlide(direction) { showSlide(currentSlide + direction); }
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') changeSlide(1);
+      if (e.key === 'ArrowLeft') changeSlide(-1);
+      if (e.key === 'f' || e.key === 'F') document.documentElement.requestFullscreen?.();
+    });
+    
+    showSlide(0);
+  </script>
+</body>
+</html>
